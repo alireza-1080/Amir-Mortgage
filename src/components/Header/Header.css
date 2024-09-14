@@ -1,0 +1,32 @@
+.header-bg {
+    width: 100%;
+    height: fit-content;
+    background-color: aqua;
+}
+
+.header {
+    height: 80px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.header__logo {
+    
+    height: inherit;
+}
+
+.header__desktop-nav {
+    justify-self: flex-end;
+}
+
+.header__hamburger {
+    
+    display: none;
+}
+
+.header__mobile-nav {
+    
+    display: none;
+}
