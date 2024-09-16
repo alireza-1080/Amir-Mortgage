@@ -1,0 +1,9 @@
+.header-mobile-navigation-button {
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+}
+
+.header-mobile-navigation-button--selected {
+    color: rgb(48, 184, 94);
+}

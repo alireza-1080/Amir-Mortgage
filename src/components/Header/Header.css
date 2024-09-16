@@ -1,7 +1,10 @@
 .header-bg {
     width: 100%;
     height: fit-content;
-    background-color: aqua;
+    background-color: rgb(11, 23, 37);
+
+    position: fixed;
+    top: 0;
 }
 
 .header {
@@ -13,7 +16,6 @@
 }
 
 .header__logo {
-    
     height: inherit;
 }
 
@@ -22,11 +24,33 @@
 }
 
 .header__hamburger {
-    
     display: none;
 }
 
 .header__mobile-nav {
-    
     display: none;
+
+    position: absolute;
+    top: 8rem;
+    left: calc(-100% - 1rem);
+    transition: all 200ms linear;
+}
+
+.header__mobile-nav--show {
+    left: -1rem;
+}
+
+@media (max-width: 768px) {
+    .header__desktop-nav {
+        display: none;
+    }
+
+    .header__hamburger {
+        display: block;
+        justify-self: flex-end;
+    }
+
+    .header__mobile-nav {
+        display: block;
+    }
 }

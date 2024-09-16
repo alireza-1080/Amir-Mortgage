@@ -1,0 +1,36 @@
+.header-hamburger-menu {
+    color: #fff;
+}
+
+.header-hamburger-menu__icon-secton {
+    position: relative;
+}
+
+.header-hamburger-menu__icon {
+    font-size: 3rem;
+    height: 4.8rem;
+
+    position: absolute;
+    top: -0.6rem;
+    left: -3.5rem;
+}
+
+.header-hamburger-menu__icon-menu {
+    transform: scale(1);
+    transition: all 100ms linear 100ms;
+}
+
+.header-hamburger-menu__icon-menu--hide {
+    transform: scale(0);
+    transition: all 100ms linear;
+}
+
+.header-hamburger-menu__icon-cancel {
+    transform: scale(0);
+    transition: all 100ms linear;
+}
+
+.header-hamburger-menu__icon-cancel--show {
+    transform: scale(0.8);
+    transition: all 100ms linear 100ms;
+}

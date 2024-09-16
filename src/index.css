@@ -47,4 +47,5 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: var(--robotoRegular);
+  height: 400vh;
 }

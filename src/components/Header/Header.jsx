@@ -1,11 +1,24 @@
 import "./Header.css";
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import HeaderDesktopNavigation from "./components/HeaderDesktopNavigation/HeaderDesktopNavigation";
 import HeaderHamburgerMenu from "./components/HeaderHamburgerMenu/HeaderHamburgerMenu";
 import HeaderLogo from "./components/HeaderLogo/HeaderLogo";
 import HeaderMobileNavigation from "./components/HeaderMobileNavigation/HeaderMobileNavigation";
+import { useSelector } from "react-redux";
 
 function Header() {
+
+    const isBurgerOpen = useSelector(state => state.navigation.isBurgerOpen)
+    const mobileNavSideBarElem = useRef(null)
+
+    useEffect(() => {
+        if(isBurgerOpen){
+            mobileNavSideBarElem.current.classList.add("header__mobile-nav--show")
+        } else {
+            mobileNavSideBarElem.current.classList.remove("header__mobile-nav--show")
+        }
+    }, [isBurgerOpen])
+
     return (
         <div className="header-bg">
             <div className="header container">
@@ -18,7 +31,7 @@ function Header() {
                 <div className="header__hamburger">
                     <HeaderHamburgerMenu />
                 </div>
-                <div className="header__mobile-nav">
+                <div className="header__mobile-nav" ref={mobileNavSideBarElem}>
                     <HeaderMobileNavigation />
                 </div>
             </div>

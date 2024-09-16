@@ -1,0 +1,16 @@
+.header-mobile-navigation {
+    width: calc(100vw - var(--scrollbar-width) + 1rem);
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: flex-end;
+}
+
+.header-mobile-navigation__items-container {
+    width: 30%;
+    min-width: 20rem;
+    height: 100%;
+    background-color: rgb(20, 36, 56);
+}

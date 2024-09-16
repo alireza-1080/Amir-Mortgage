@@ -1,0 +1,31 @@
+.header-desktop-navigation-button {
+    font-family: var(--robotoMedium);
+    padding: 2rem;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+
+    transition: all 200ms linear;
+}
+
+.header-desktop-navigation-button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.3rem;
+    background-color: rgb(48, 184, 94);
+    transform: scaleX(0);
+    transition: all 200ms linear;
+
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+}
+
+.header-desktop-navigation-button--selected {
+    color: rgb(48, 184, 94);
+}
+
+.header-desktop-navigation-button--selected::after{
+    transform: scaleX(0.8);
+}

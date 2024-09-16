@@ -1,10 +1,11 @@
 .header-logo {
-    height: inherit;
+    height: fit-content;
     border: 50%;
-    background-color: red;
     border-radius: 50%;
+    cursor: pointer;
+    margin-left: -1rem;
 }
 
 .header-logo__img {
-   height: 100%;
+   height: 80px;
 }

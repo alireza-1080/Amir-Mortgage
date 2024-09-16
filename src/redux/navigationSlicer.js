@@ -7,7 +7,8 @@ const initialState = {
         { title: "About", url: "" },
         { title: "Resources", url: "" },
         { title: "Blog", url: "" },
-    ]
+    ],
+    isBurgerOpen: false,
 }
 
 const navigationSlice = createSlice({
@@ -16,10 +17,13 @@ const navigationSlice = createSlice({
     reducers: {
         setSelectedTab: (state, action) => {
             state.selectedTab = action.payload
+        },
+        setIsBurgerOpen: (state) => {
+            state.isBurgerOpen = !state.isBurgerOpen;
         }
     }
 })
 
-export const { setSelectedTab } = navigationSlice.actions;
+export const { setSelectedTab, setIsBurgerOpen } = navigationSlice.actions;
 
 export default navigationSlice.reducer;
