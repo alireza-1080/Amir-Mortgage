@@ -5,6 +5,7 @@ import HeaderHamburgerMenu from "./components/HeaderHamburgerMenu/HeaderHamburge
 import HeaderLogo from "./components/HeaderLogo/HeaderLogo";
 import HeaderMobileNavigation from "./components/HeaderMobileNavigation/HeaderMobileNavigation";
 import { useSelector } from "react-redux";
+import HeaderRatesTerms from "./components/HeaderRatesTerms/HeaderRatesTerms";
 
 function Header() {
 
@@ -22,6 +23,9 @@ function Header() {
     return (
         <div className="header-bg">
             <div className="header container">
+                <div className="header__rates-terms">
+                    <HeaderRatesTerms />
+                </div>
                 <div className="header__logo">
                     <HeaderLogo />
                 </div>

@@ -1,9 +1,5 @@
 .home-page-services-BG {
     background: linear-gradient(rgb(236, 248, 243) 0%, rgb(244, 246, 239) 100%) 50% 100% / 100% no-repeat;
-    margin-top: 8rem;
-    padding-bottom: 7rem;
-}
-
-.home-page-services {
-    
+    padding-top: 8rem;
+    padding-bottom: 4rem;
 }

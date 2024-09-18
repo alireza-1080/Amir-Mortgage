@@ -3,9 +3,13 @@
     padding: 2rem;
     cursor: pointer;
     position: relative;
-    color: #fff;
+    color: var(--primary-grey);
 
     transition: all 200ms linear;
+}
+
+.header-desktop-navigation-button:hover {
+    color: #fff;
 }
 
 .header-desktop-navigation-button::after {
@@ -13,7 +17,7 @@
     display: block;
     width: 100%;
     height: 0.3rem;
-    background-color: rgb(48, 184, 94);
+    background-color: var(--primary-green);
     transform: scaleX(0);
     transition: all 200ms linear;
 
@@ -23,7 +27,7 @@
 }
 
 .header-desktop-navigation-button--selected {
-    color: rgb(48, 184, 94);
+    color: var(--primary-green);
 }
 
 .header-desktop-navigation-button--selected::after{

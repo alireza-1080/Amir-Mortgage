@@ -29,6 +29,10 @@
   --archivoBlack: "Archivo-Black";
   --archivoRegular: "Archivo-Regular";
 
+  /* colors */
+  --primary-green: rgb(48, 184, 94);
+  --primary-grey: rgba(255, 255, 255, 0.5);
+
   /* Scroll Bar Width Variable */
   --scrollbar-width: 0px;
 

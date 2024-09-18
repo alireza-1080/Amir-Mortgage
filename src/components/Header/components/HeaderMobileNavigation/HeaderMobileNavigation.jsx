@@ -2,6 +2,7 @@ import "./HeaderMobileNavigation.css"
 import React from 'react'
 import { useSelector } from "react-redux"
 import HeaderMobileNavigationButton from "./components/HeaderMobileNavigationButton/HeaderMobileNavigationButton"
+import HeaderRatesTerms from "../HeaderRatesTerms/HeaderRatesTerms"
 
 function HeaderMobileNavigation() {
 
@@ -11,7 +12,7 @@ function HeaderMobileNavigation() {
     <div className="header-mobile-navigation">
       <div className="header-mobile-navigation__items-container">
         {allTabs.map(tab => {
-          return <HeaderMobileNavigationButton key={tab.title} {...tab}/>
+          return <HeaderMobileNavigationButton key={tab.title} {...tab} />
         })}
       </div>
     </div>

@@ -1,44 +1,41 @@
 .home-page-services-cards {
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 4rem;
 
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-items: center;
     justify-content: center;
     gap: 2rem;
-    grid-template-areas: 
-    "c0 c1 c2 c3";
 }
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
     .home-page-services-cards {
-        grid-template-columns: repeat(3, auto);
-        grid-template-areas: 
-        "c0 c1 c2"
-        "c3 c3 c3"
-        ;
+        transform: scale(0.9);
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
+    .home-page-services-cards {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 700px) {
+    .home-page-services-cards {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 620px) {
     .home-page-services-cards {
         grid-template-columns: repeat(2, auto);
-        grid-template-areas: 
-        "c0 c1"
-        "c2 c3"
-        ;
+        transform: scale(1);
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width:450px) {
     .home-page-services-cards {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "c0"
-        "c1"
-        "c2"
-        "c3"
-        ;
     }
 }

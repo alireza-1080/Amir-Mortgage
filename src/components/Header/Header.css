@@ -1,7 +1,7 @@
 .header-bg {
     width: 100%;
     height: fit-content;
-    background-color: rgb(11, 23, 37);
+    background-color: #0b1623;
 
     position: fixed;
     top: 0;
@@ -12,7 +12,7 @@
     height: 80px;
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
 }
 
@@ -41,7 +41,7 @@
     left: -1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .header__desktop-nav {
         display: none;
     }
@@ -53,5 +53,15 @@
 
     .header__mobile-nav {
         display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__rates-terms {
+        display: none;
     }
 }
