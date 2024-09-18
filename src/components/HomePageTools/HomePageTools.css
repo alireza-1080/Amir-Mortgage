@@ -1,0 +1,14 @@
+.home-page-tools-bg {
+    width: 100%;
+    background-color: rgba(191, 215, 237, 0.5);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.home-page-tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}

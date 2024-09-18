@@ -1,0 +1,14 @@
+.home-page-tools-box {
+    /* max-width: 114rem; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 850px) {
+    .home-page-tools-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

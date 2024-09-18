@@ -1,13 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import navigationSlicer from "./navigationSlicer";
 import servicesSlicer from "./servicesSlicer";
-import clientWidthSlicer from "./clientWidthSlicer";
+import toolsSlicer from "./toolsSlicer";
 
 const store = configureStore({
     reducer: {
-        clientWidth: clientWidthSlicer,
         navigation: navigationSlicer,
         services: servicesSlicer,
+        tools: toolsSlicer,
     }
 })
 

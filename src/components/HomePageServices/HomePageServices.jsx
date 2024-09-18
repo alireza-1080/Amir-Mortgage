@@ -7,7 +7,7 @@ import HomePageServicesPrivacy from "./components/HomePageServicesPrivacy/HomePa
 
 function HomePageServices() {
     return (
-        <div className="home-page-services-BG">
+        <div className="home-page-services-bg">
             <div className="home-page-services container">
                 <div className="title">
                     <HomePageServicesTitle />

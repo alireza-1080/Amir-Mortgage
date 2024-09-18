@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "Roboto-Light";
+  src: url(/fonts/Roboto/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
   font-family: "Roboto-Medium";
   src: url(/fonts/Roboto/Roboto-Medium.ttf) format('truetype');
 }
@@ -25,6 +30,7 @@
 :root {
   /* Fonts */
   --robotoRegular: "Roboto-Regular";
+  --robotoLight: "Roboto-Light";
   --robotoMedium: "Roboto-Medium";
   --archivoBlack: "Archivo-Black";
   --archivoRegular: "Archivo-Regular";

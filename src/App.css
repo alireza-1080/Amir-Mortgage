@@ -1,5 +1,5 @@
 .app{
-  width: var(--client-width);
+  width: 100%;
 }
 
 .container {

@@ -11,8 +11,9 @@
 
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 4fr 2fr;
     justify-items: center;
-    align-items: center;
+    row-gap: 1rem;
 }
 
 .home-page-services-card:hover {
@@ -22,11 +23,14 @@
 }
 
 .home-page-services-card__img {
-    width: 50%;
+    width: 45%;
+    align-self: flex-end;
 }
 
 .home-page-services-card__title {
     font-family: var(--robotoRegular);
+    align-self: flex-start;
+    font-weight: 200;
 }
 
 @media (max-width: 620px) {
@@ -37,6 +41,8 @@
         justify-self: var(--card-position);
 
         grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        align-items: center !important;
         padding: 0.4rem 2rem;
         gap: 2rem;
     }
@@ -48,5 +54,6 @@
 
     .home-page-services-card__title {
         justify-self: flex-start;
+        align-self: center !important;
     }
 }
