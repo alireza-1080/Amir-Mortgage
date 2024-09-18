@@ -1,0 +1,31 @@
+.home-page-services-card {
+    --card-name: c;
+    grid-area: var(--card-name);
+
+    width: 20rem;
+    height: 20rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 200ms linear;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-page-services-card:hover {
+    -webkit-box-shadow: 0px 5px 0px 0px rgb(48, 184, 94);
+    box-shadow: 0px 5px 0px 0px rgb(48, 184, 94);
+    margin-top: -1rem;
+}
+
+.home-page-services-card__img {
+    width: 60%;
+}
+
+.home-page-services-card__title {
+    font-family: var(--robotoRegular);
+}

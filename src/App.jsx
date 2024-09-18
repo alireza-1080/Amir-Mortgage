@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setScrollBarWidth } from './redux/scrollBarWidthSlicer'
 import Header from './components/Header/Header'
+import HomePageServices from './components/HomePageServices/HomePageServices'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className='app'>
       <Header />
+      <HomePageServices />
     </div>
   )
 }

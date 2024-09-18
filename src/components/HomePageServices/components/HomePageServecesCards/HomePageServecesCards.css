@@ -1,0 +1,44 @@
+.home-page-services-cards {
+    margin: 0 auto;
+    margin-top: 7rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-areas: 
+    "c0 c1 c2 c3";
+}
+
+@media (max-width: 920px) {
+    .home-page-services-cards {
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        "c0 c1 c2"
+        "c3 c3 c3"
+        ;
+    }
+}
+
+@media (max-width: 680px) {
+    .home-page-services-cards {
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "c0 c1"
+        "c2 c3"
+        ;
+    }
+}
+
+@media (max-width: 460px) {
+    .home-page-services-cards {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "c0"
+        "c1"
+        "c2"
+        "c3"
+        ;
+    }
+}

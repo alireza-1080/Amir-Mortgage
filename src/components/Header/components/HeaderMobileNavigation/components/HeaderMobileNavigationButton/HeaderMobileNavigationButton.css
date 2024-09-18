@@ -2,8 +2,31 @@
     width: 100%;
     padding: 2rem;
     color: #fff;
+    transition: all 200ms linear;
+
+    position: relative;
+}
+
+.header-mobile-navigation-button::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    background-color: rgb(48, 184, 94);
+    transform: scale(0);
+    transition: all 200ms linear;
+
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: 2rem;
+    
 }
 
 .header-mobile-navigation-button--selected {
     color: rgb(48, 184, 94);
+    padding-left: 6rem;
+}
+
+.header-mobile-navigation-button--selected::after {
+    transform: scale(1);
 }

@@ -1,0 +1,30 @@
+.home-page-services-title {
+    font-family: var(--archivoBlack);
+    padding-top: 4rem;
+    font-size: 5rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+@media (max-width: 680px) {
+    .home-page-services-title {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 460px) {
+    .home-page-services-title {
+        transform: scale(0.8);
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .home-page-services-title {
+        transform: scale(0.7);
+        padding-top: 0rem;
+    }
+}
