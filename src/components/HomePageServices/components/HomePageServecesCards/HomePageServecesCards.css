@@ -29,13 +29,14 @@
 
 @media (max-width: 620px) {
     .home-page-services-cards {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 1fr;
         transform: scale(1);
+        max-width: 80%;
     }
 }
 
-@media (max-width:450px) {
+@media (max-width: 550px) {
     .home-page-services-cards {
-        grid-template-columns: 1fr;
+        max-width: unset;
     }
 }

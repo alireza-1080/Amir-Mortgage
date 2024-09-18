@@ -1,11 +1,14 @@
 .header-logo {
-    height: fit-content;
+    height: 100%;
     border: 50%;
     border-radius: 50%;
     cursor: pointer;
-    margin-left: -1rem;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
 }
 
 .header-logo__img {
-   height: 80px;
+   height: 60px;
 }

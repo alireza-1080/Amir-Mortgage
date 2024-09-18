@@ -22,28 +22,31 @@
 }
 
 .home-page-services-card__img {
-    width: 60%;
+    width: 50%;
 }
 
 .home-page-services-card__title {
     font-family: var(--robotoRegular);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 620px) {
     .home-page-services-card {
+        --card-position: ;
         width: 30rem;
         height: 5rem;
+        justify-self: var(--card-position);
 
         grid-template-columns: auto 1fr;
         padding: 0.4rem 2rem;
+        gap: 2rem;
     }
 
     .home-page-services-card__img {
         width: unset;
-        height: 100%;
+        height: 90%;
     }
 
     .home-page-services-card__title {
-        font-weight: 900;
+        justify-self: flex-start;
     }
 }
