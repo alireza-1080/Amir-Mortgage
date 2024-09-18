@@ -34,7 +34,7 @@
   --primary-grey: rgba(255, 255, 255, 0.5);
 
   /* Scroll Bar Width Variable */
-  --scrollbar-width: 0px;
+  --client-width: 0px;
 
   font-size: 62.5%;
 }

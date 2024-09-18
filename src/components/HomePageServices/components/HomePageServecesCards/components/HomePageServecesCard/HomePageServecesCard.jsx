@@ -6,12 +6,12 @@ function HomePageServecesCard({ title, icon, index }) {
   const card = useRef(null);
 
   useEffect(() => {
-    if(index % 2) {
+    if (index % 2) {
       card.current.style.setProperty("--card-position", "flex-start")
     } else {
       card.current.style.setProperty("--card-position", "flex-end")
     }
-  },[])
+  }, [])
 
   return (
     <div className="home-page-services-card" ref={card}>

@@ -1,21 +1,21 @@
 import './App.css'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { setScrollBarWidth } from './redux/scrollBarWidthSlicer'
+import { setClientWidth } from './redux/clientWidthSlicer'
 import Header from './components/Header/Header'
 import HomePageServices from './components/HomePageServices/HomePageServices'
 
 function App() {
 
   const dispatch = useDispatch()
-  const scrollBarWidth = useSelector(state => state.scrollBarWidth.scrollBarWidth)
+  const clientWidth = useSelector(state => state.clientWidth.clientWidth)
 
   useEffect(() => {
-    document.documentElement.style.setProperty("--scrollbar-width", `${scrollBarWidth}px`)
-  }, [scrollBarWidth])
+    document.documentElement.style.setProperty("--client-width", `${clientWidth}px`)
+  }, [clientWidth])
 
   const windowResizeHandler = () => {
-    dispatch(setScrollBarWidth(window.innerWidth - document.documentElement.clientWidth))
+    dispatch(setClientWidth(document.documentElement.clientWidth))
   }
   
   window.addEventListener('resize', windowResizeHandler)

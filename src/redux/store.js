@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import scrollBarWidthSlicer from "./scrollBarWidthSlicer";
 import navigationSlicer from "./navigationSlicer";
 import servicesSlicer from "./servicesSlicer";
+import clientWidthSlicer from "./clientWidthSlicer";
 
 const store = configureStore({
     reducer: {
-        scrollBarWidth: scrollBarWidthSlicer,
+        clientWidth: clientWidthSlicer,
         navigation: navigationSlicer,
         services: servicesSlicer,
     }

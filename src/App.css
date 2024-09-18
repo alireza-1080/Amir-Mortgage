@@ -1,5 +1,5 @@
 .app{
-  width: calc(100vw - var(--scrollbar-width, 0px));
+  width: var(--client-width);
 }
 
 .container {
