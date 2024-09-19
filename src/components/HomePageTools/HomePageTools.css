@@ -12,3 +12,17 @@
     justify-items: center;
     align-items: center;
 }
+
+.home-page-tools-mobile {
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .home-page-tools {
+        display: none;
+    }
+
+    .home-page-tools-mobile {
+        display: block;
+    }
+}
