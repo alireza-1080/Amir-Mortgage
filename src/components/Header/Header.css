@@ -33,12 +33,12 @@
 
     position: absolute;
     top: 8rem;
-    left: calc(-100% - 1rem);
+    right: calc(-100% - 1rem);
     transition: all 200ms linear;
 }
 
 .header__mobile-nav--show {
-    left: -1rem;
+    right: 0;
 }
 
 @media (max-width: 950px) {
