@@ -17,7 +17,7 @@
     display: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .home-page-tools {
         display: none;
     }
