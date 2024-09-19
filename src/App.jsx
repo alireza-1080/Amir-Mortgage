@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './components/Header/Header'
 import HomePageServices from './components/HomePageServices/HomePageServices'
 import HomePageTools from './components/HomePageTools/HomePageTools'
+import BestRateSection from './components/BestRateSection/BestRateSection'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <HomePageServices />
       <HomePageTools />
+      <BestRateSection />
     </div>
   )
 }

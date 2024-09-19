@@ -1,0 +1,54 @@
+.best-rate-list {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 3rem;
+    cursor: pointer;
+}
+
+.best-rate-list__selected {
+    position: relative;
+    transition: all 200ms linear;
+    z-index: 10;
+}
+
+.best-rate-list__selected:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.best-rate-list__selected-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+
+    position: absolute;
+    top: 1px;
+    right: 1px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.best-rate-list__icon {
+    transition: all 200ms linear;
+}
+
+.best-rate-list__selected:hover .best-rate-list__icon {
+    transform: scale(1.2);
+}
+
+.best-rate-list__list {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.best-rate-list__list--hide {
+    display: none;
+}

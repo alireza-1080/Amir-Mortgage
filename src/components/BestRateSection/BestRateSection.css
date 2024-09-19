@@ -1,0 +1,23 @@
+.best-rate-section-bg {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 18rem;
+    background-color: #ffc5d37a;
+}
+
+.rate-sectio-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.best-rate-section {
+    max-width: 555px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}

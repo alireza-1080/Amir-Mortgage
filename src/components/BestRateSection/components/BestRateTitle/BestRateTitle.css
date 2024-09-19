@@ -1,0 +1,17 @@
+.best-rate-title {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.best-rate-title__title {
+    font-size: 5.2rem;
+    letter-spacing: 0;
+    line-height: 5.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
