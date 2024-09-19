@@ -17,10 +17,6 @@
     align-items: center;
 }
 
-.home-page-tools-box-mobile__arrow-right--disable {
-    opacity: 0;
-}
-
 .home-page-tools-box-mobile__item {
     width: 100%;
     height: 100%;
