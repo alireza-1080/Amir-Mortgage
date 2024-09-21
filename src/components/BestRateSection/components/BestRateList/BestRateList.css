@@ -52,3 +52,13 @@
 .best-rate-list__list--hide {
     display: none;
 }
+
+@media (max-width: 600px) {
+    .best-rate-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 2rem;
+        justify-items: center;
+    }
+}

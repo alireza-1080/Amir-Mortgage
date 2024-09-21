@@ -4,8 +4,6 @@
     cursor: pointer;
     position: relative;
     color: var(--primary-grey);
-
-    transition: all 200ms linear;
 }
 
 .header-desktop-navigation-button:hover {
@@ -19,7 +17,6 @@
     height: 0.3rem;
     background-color: var(--primary-green);
     transform: scaleX(0);
-    transition: all 200ms linear;
 
     position: absolute;
     left: 0;

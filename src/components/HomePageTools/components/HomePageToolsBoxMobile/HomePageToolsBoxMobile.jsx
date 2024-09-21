@@ -1,5 +1,5 @@
 import "./HomePageToolsBoxMobile.css"
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { GoTriangleLeft } from "react-icons/go";
 import { GoTriangleRight } from "react-icons/go";
 import HomePageTool from "../HomePageToolsBox/components/HomePageTool/HomePageTool";
@@ -14,7 +14,7 @@ function HomePageToolsBoxMobile() {
         if (toolCounter !== 0) {
             setToolCounter(toolCounter - 1)
         } else {
-            setToolCounter(allTools.lenght - 1)
+            setToolCounter(allTools.length - 1)
         }
     }
 

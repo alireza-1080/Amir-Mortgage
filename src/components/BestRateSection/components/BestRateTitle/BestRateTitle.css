@@ -15,3 +15,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
 }
+
+@media (max-width: 600px) {
+    .best-rate-title__title {
+        font-size: 3.5rem;
+    }
+}

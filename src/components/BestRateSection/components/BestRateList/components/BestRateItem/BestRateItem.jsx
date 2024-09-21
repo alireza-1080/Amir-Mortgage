@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import { useDispatch } from "react-redux";
 import { setSelectedService } from "../../../../../../redux/selectedServiceSlicer";
 
-function BestRateItem({ title, icon, selected, index }) {
+function BestRateItem({ title, icon, selected, index, setIsListOpen }) {
 
     const item = useRef(null);
     const dispatch = useDispatch()
@@ -19,6 +19,7 @@ function BestRateItem({ title, icon, selected, index }) {
     const clickHandler = () => {
         if (!selected) {
             dispatch(setSelectedService(index))
+            setIsListOpen(false)
         }
     }
 

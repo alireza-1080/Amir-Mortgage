@@ -9,27 +9,43 @@ function BestRateList() {
 
     const allServices = useSelector(state => state.services);
     const selectedService = useSelector(state => state.selectedService.selectedService)
-    const listElem = useRef(null)
+    const [isListOpen, setIsListOpen] = useState(false)
+    const openingListElem = useRef(null)
+    const fullListContainerElem = useRef(null)
+
+    const onSelectionClickHandler = () => {
+        if (!isListOpen) {
+            setIsListOpen(true);
+        }
+    }
 
     useEffect(() => {
-        listElem.current.classList.add("best-rate-list__list--hide")
-    },[selectedService])
+        if(isListOpen) {
+            openingListElem.current.classList.remove("best-rate-list__list--hide")
+        } else {
+            openingListElem.current.classList.add("best-rate-list__list--hide")
+        }
+    },[isListOpen])
 
-    const selectionClickHandler = () => {
-        listElem.current.classList.remove("best-rate-list__list--hide")
+    const handleClickOutsideOfListContainer = (event) => {
+        if (!fullListContainerElem.current.contains(event.target)) {
+            setIsListOpen(false)
+        }
     }
+
+    window.addEventListener('mousedown', handleClickOutsideOfListContainer)
 
     return (
         <div className="best-rate-list">
-            <div className="best-rate-list__container">
-                <div className="best-rate-list__selected" onClick={selectionClickHandler}>
+            <div className="best-rate-list__container" ref={fullListContainerElem}>
+                <div className="best-rate-list__selected" onClick={onSelectionClickHandler}>
                     <BestRateItem {...allServices[selectedService]} selected />
                     <div className="best-rate-list__selected-icon">
                         <FaChevronDown className="best-rate-list__icon" />
                     </div>
-                    <div className="best-rate-list__list" ref={listElem}>
+                    <div className="best-rate-list__list best-rate-list__list--hide" ref={openingListElem}>
                         {allServices.map((service, index) => {
-                            return <BestRateItem key={service.title} {...service} index={index}/>
+                            return <BestRateItem key={service.title} {...service} index={index} setIsListOpen={setIsListOpen}/>
                         })}
                     </div>
                 </div>
