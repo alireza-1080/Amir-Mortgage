@@ -59,3 +59,13 @@ body {
   font-family: var(--robotoRegular);
   height: 400vh;
 }
+
+::selection {
+  background: transparent;
+  color: inherit;
+}
+
+::-moz-selection {
+  background: transparent;
+  color: inherit;
+}
