@@ -1,0 +1,19 @@
+.privacy-safety-section-bg {
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+.privacy-safety-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .privacy-safety-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1f);
+    }
+}

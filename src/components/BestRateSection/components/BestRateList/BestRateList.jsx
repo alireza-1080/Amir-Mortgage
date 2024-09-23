@@ -20,12 +20,12 @@ function BestRateList() {
     }
 
     useEffect(() => {
-        if(isListOpen) {
+        if (isListOpen) {
             openingListElem.current.classList.remove("best-rate-list__list--hide")
         } else {
             openingListElem.current.classList.add("best-rate-list__list--hide")
         }
-    },[isListOpen])
+    }, [isListOpen])
 
     const handleClickOutsideOfListContainer = (event) => {
         if (!fullListContainerElem.current.contains(event.target)) {
@@ -33,7 +33,13 @@ function BestRateList() {
         }
     }
 
-    window.addEventListener('mousedown', handleClickOutsideOfListContainer)
+    useEffect(() => {
+        window.addEventListener('mousedown', handleClickOutsideOfListContainer);
+
+        return () => {
+            window.removeEventListener('mousedown', handleClickOutsideOfListContainer);
+        }
+    }, [])
 
     return (
         <div className="best-rate-list">
@@ -45,7 +51,7 @@ function BestRateList() {
                     </div>
                     <div className="best-rate-list__list best-rate-list__list--hide" ref={openingListElem}>
                         {allServices.map((service, index) => {
-                            return <BestRateItem key={service.title} {...service} index={index} setIsListOpen={setIsListOpen}/>
+                            return <BestRateItem key={service.title} {...service} index={index} setIsListOpen={setIsListOpen} />
                         })}
                     </div>
                 </div>
