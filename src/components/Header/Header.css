@@ -30,18 +30,15 @@
 
 .header__mobile-nav {
     display: none;
-    
+
     position: absolute;
     top: 8rem;
-    right: 0;
-    opacity: 0;
-    transition: opacity 200ms linear;
+    right: calc(-100% - 1rem);
+    transition: all 200ms linear;
 }
 
 .header__mobile-nav--show {
-    opacity: 1;
-    transition: opacity 200ms linear;
-    display: block;
+    right: 0;
 }
 
 @media (max-width: 950px) {
