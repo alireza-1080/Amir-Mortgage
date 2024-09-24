@@ -2,7 +2,7 @@
     width: 100%;
     height: fit-content;
     background-color: #0b1623;
-
+    
     position: fixed;
     top: 0;
     z-index: 500;
@@ -30,15 +30,18 @@
 
 .header__mobile-nav {
     display: none;
-
+    
     position: absolute;
     top: 8rem;
-    right: calc(-100% - 1rem);
-    transition: all 200ms linear;
+    right: 0;
+    opacity: 0;
+    transition: opacity 200ms linear;
 }
 
 .header__mobile-nav--show {
-    right: 0;
+    opacity: 1;
+    transition: opacity 200ms linear;
+    display: block;
 }
 
 @media (max-width: 950px) {
