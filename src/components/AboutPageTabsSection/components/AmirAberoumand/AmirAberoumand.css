@@ -1,0 +1,11 @@
+.amir-aberoumand {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+}
+
+@media (max-width: 850px) {
+    .amir-aberoumand {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+}
