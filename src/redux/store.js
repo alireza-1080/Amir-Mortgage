@@ -4,6 +4,7 @@ import servicesSlicer from "./servicesSlicer";
 import toolsSlicer from "./toolsSlicer";
 import selectedServiceSlicer from "./selectedServiceSlicer";
 import privacSafetySlicer from "./privacySafetySlicer";
+import aboutPageTabsStatesSlicer from "./aboutPageTabsStatesSlicer";
 
 const store = configureStore({
     reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
         tools: toolsSlicer,
         selectedService: selectedServiceSlicer,
         privacySafety: privacSafetySlicer,
+        aboutPageTabsStates: aboutPageTabsStatesSlicer,
     }
 })
 

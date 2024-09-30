@@ -1,0 +1,17 @@
+.our-mission__secondary-missions-container {
+    margin: 13rem 0;
+}
+
+.our-mission__secondary-missions-container> *:not(:first-child) {
+    margin-top: 10rem;
+}
+
+@media (max-width: 850px) {
+    .our-mission__secondary-missions-container {
+        margin: 6rem 0;
+    }
+
+    .our-mission__secondary-missions-container> *:not(:first-child) {
+        margin-top: 6rem;
+    }
+}

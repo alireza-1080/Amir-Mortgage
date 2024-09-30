@@ -1,12 +1,17 @@
+import { useDispatch, useSelector } from "react-redux";
 import "./AboutPageTab.css"
 import React, { useEffect, useRef } from 'react'
+import { setSelectedTab } from "../../../../redux/aboutPageTabsStatesSlicer";
 
-function AboutPageTab({ title, selectedTab, setSelectedTab }) {
+function AboutPageTab({ title }) {
+
+    const selectedTab = useSelector(state => state.aboutPageTabsStates.selectedTab)
+    const dispatch = useDispatch()
 
     const tab = useRef(null);
 
     const clickHandler = () => {
-        setSelectedTab(title)
+        dispatch(setSelectedTab(title))
     }
 
     useEffect(() => {

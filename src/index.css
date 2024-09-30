@@ -25,6 +25,11 @@
   src: url(/fonts/Archivo/Archivo-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: "Georgia-Regular";
+  src: url(/fonts/Georgia/Georgia-Regular.ttf) format('truetype');
+}
+
 /* Personal Prefrences */
 
 :root {
@@ -34,6 +39,7 @@
   --robotoMedium: "Roboto-Medium";
   --archivoBlack: "Archivo-Black";
   --archivoRegular: "Archivo-Regular";
+  --georgiaRegular: "Georgia-Regular";
 
   /* colors */
   --primary-green: rgb(48, 184, 94);
