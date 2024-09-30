@@ -21,7 +21,7 @@ function WordSection() {
         <div className="word-section__content-container">
           <h2 className="word-section__title">A word from <br /> "Amir Aberoumand"</h2>
           <h3 className="word-section__details">
-            After experiencing just how stressful it was to get competitive mortgage quotes, I set out to create Lendgo. I wanted to ensure that no one would have to go through the difficult process that I had to. I'm grateful you've turned to us for your home loan needs and look forward to helping you save thousands of dollars a year!
+            After experiencing just how stressful it was to get competitive mortgage quotes, I set out to create this platform. I wanted to ensure that no one would have to go through the difficult process that I had to. I'm grateful you've turned to us for your home loan needs and look forward to helping you save thousands of dollars a year!
           </h3>
           <button className="word-section__btn" onClick={clickHandler}>Learn More</button>
         </div>
