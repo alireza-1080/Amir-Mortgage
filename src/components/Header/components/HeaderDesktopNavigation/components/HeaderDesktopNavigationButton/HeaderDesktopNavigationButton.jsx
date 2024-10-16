@@ -2,6 +2,7 @@ import "./HeaderDesktopNavigationButton.css";
 import React, { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedTab } from "../../../../../../redux/navigationSlicer";
+import { updateRoute } from "../../../../../../redux/routingSlicer"; 
 
 function HeaderDesktopNavigationButton({ title, url }) {
 
@@ -11,6 +12,7 @@ function HeaderDesktopNavigationButton({ title, url }) {
 
   const clickHandler = (param) => {
     dispatch(setSelectedTab(param))
+    dispatch(updateRoute(title))
   }
 
   useEffect(() => {

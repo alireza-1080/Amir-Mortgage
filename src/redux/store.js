@@ -4,7 +4,9 @@ import servicesSlicer from "./servicesSlicer";
 import toolsSlicer from "./toolsSlicer";
 import selectedServiceSlicer from "./selectedServiceSlicer";
 import privacSafetySlicer from "./privacySafetySlicer";
-import aboutPageTabsStatesSlicer from "./aboutPageTabsStatesSlicer";import formStatesSlicer from "./formStatesSlicer";
+import aboutPageTabsStatesSlicer from "./aboutPageTabsStatesSlicer";
+import formStatesSlicer from "./formStatesSlicer";
+import routingSlicer from "./routingSlicer"
 
 const store = configureStore({
     reducer: {
@@ -15,6 +17,7 @@ const store = configureStore({
         privacySafety: privacSafetySlicer,
         aboutPageTabsStates: aboutPageTabsStatesSlicer,
         formStates: formStatesSlicer,
+        routing: routingSlicer,
     }
 })
 
