@@ -27,3 +27,9 @@
     font-family: var(--georgiaRegular);
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .contact-us-any-time {
+        padding-bottom: 3rem;
+    }
+}
