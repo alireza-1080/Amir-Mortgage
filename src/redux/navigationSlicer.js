@@ -18,8 +18,8 @@ const navigationSlice = createSlice({
         setSelectedTab: (state, action) => {
             state.selectedTab = action.payload
         },
-        setIsBurgerOpen: (state) => {
-            state.isBurgerOpen = !state.isBurgerOpen;
+        setIsBurgerOpen: (state, action) => {
+            state.isBurgerOpen = action.payload;
         }
     }
 })

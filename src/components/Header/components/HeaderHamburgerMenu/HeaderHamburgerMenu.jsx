@@ -13,11 +13,15 @@ function HeaderHamburgerMenu() {
   const cancelIcon = useRef(null);
 
   const clickHandler = () => {
-    dispatch(setIsBurgerOpen())
+    if (isBurgerOpen) {
+      dispatch(setIsBurgerOpen(false))
+    } else {
+      dispatch(setIsBurgerOpen(true))
+    }
   }
 
   useEffect(() => {
-    if(isBurgerOpen){
+    if (isBurgerOpen) {
       menuIcon.current.classList.add("header-hamburger-menu__icon-menu--hide")
       cancelIcon.current.classList.add("header-hamburger-menu__icon-cancel--show")
     } else {
