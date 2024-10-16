@@ -2,6 +2,7 @@ import "./HeaderMobileNavigationButton.css";
 import { useDispatch, useSelector } from "react-redux";
 import React, { useEffect, useRef } from 'react'
 import { setSelectedTab } from "../../../../../../redux/navigationSlicer";
+import { updateRoute } from "../../../../../../redux/routingSlicer";
 
 function HeaderMobileNavigationButton({ title, url }) {
 
@@ -19,6 +20,7 @@ function HeaderMobileNavigationButton({ title, url }) {
 
     const clickHandler = (param) => {
         dispatch(setSelectedTab(param))
+        dispatch(updateRoute(title))
     }
 
     return (
