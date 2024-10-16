@@ -3,15 +3,18 @@ import React, { useEffect } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { setIsBurgerOpen } from './redux/navigationSlicer'
 
 function App() {
 
   const navigate = useNavigate()
   const route = useSelector(state => state.routing.route)
+  const dispatch = useDispatch()
 
 
   useEffect(() => {
+    dispatch(setIsBurgerOpen(false))
     if (route.toLowerCase() === "home") {
       navigate("/")
     } else if (route.toLowerCase() === "about") {
