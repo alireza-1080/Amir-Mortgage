@@ -1,0 +1,19 @@
+.contact-form {
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+
+    display: grid;
+    grid-template-areas:
+    "fn"
+    "ln"
+    "e"
+    "p"
+    "r"
+    "c"
+    "c"
+    "c"
+    "btn"
+    ;
+    row-gap: 2rem;
+}

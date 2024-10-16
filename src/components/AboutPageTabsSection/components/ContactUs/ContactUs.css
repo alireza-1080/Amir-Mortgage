@@ -1,0 +1,75 @@
+.contact-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact-us__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "time time"
+        "call form"
+        "email form";
+    gap: 3rem;
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    width: 100%;
+    max-width: 110rem;
+}
+
+.contact-us__any-time {
+    grid-area: time;
+    justify-self: center;
+}
+
+.contact-us__call-us {
+    grid-area: call;
+}
+
+.contact-us__email-us {
+    grid-area: email;
+}
+
+.contact-us__contact-form {
+    grid-area: form;
+}
+
+@media (max-width: 1200px) {
+    .contact-us__container {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-us__container {
+        grid-template-columns: auto 3fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto) 61.391rem;
+        grid-template-areas:
+            "time time"
+            "call email"
+            "form form";
+    }
+}
+
+@media (max-width: 560px) {
+    .contact-us__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto) 61.391rem;
+        grid-template-areas:
+            "time"
+            "call"
+            "email"
+            "form";
+    }
+}

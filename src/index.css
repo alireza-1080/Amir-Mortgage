@@ -42,11 +42,10 @@
   --georgiaRegular: "Georgia-Regular";
 
   /* colors */
-  --primary-green: rgb(48, 184, 94);
+  --primary-green: #30b85e;
   --primary-grey: rgba(255, 255, 255, 0.5);
-
-  /* Scroll Bar Width Variable */
-  --client-width: 0px;
+  --primary-blue: #3070b8;
+  --primary-red: #d50000;
 
   font-size: 62.5%;
 }
@@ -63,14 +62,4 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: var(--robotoRegular);
-}
-
-::selection {
-  background: transparent;
-  color: inherit;
-}
-
-::-moz-selection {
-  background: transparent;
-  color: inherit;
 }
