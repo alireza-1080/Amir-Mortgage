@@ -15,6 +15,7 @@ function App() {
 
   useEffect(() => {
     dispatch(setIsBurgerOpen(false))
+    window.scrollTo(0, 0)
     if (route.toLowerCase() === "home") {
       navigate("/")
     } else if (route.toLowerCase() === "about") {
