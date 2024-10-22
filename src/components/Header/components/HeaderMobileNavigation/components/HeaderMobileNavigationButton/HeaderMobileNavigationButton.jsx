@@ -7,16 +7,16 @@ import { updateRoute } from "../../../../../../redux/routingSlicer";
 function HeaderMobileNavigationButton({ title, url }) {
 
     const dispatch = useDispatch()
-    const selectedTab = useSelector(state => state.navigation.selectedTab)
+    const route = useSelector(state => state.routing.route);
     const button = useRef(null)
 
     useEffect(() => {
-        if (selectedTab === title) {
+        if (route === title) {
             button.current.classList.add("header-mobile-navigation-button--selected")
         } else {
             button.current.classList.remove("header-mobile-navigation-button--selected")
         }
-    }, [selectedTab])
+    }, [route])
 
     const clickHandler = (param) => {
         dispatch(setSelectedTab(param))
