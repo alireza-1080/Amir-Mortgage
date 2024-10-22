@@ -1,8 +1,11 @@
 .header-mobile-navigation {
     width: calc(100vw + 1rem);
     height: calc(100vh - 80px);
-    background-color: rgba(0, 0, 0, 0.5);
-    
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+
     display: grid;
     grid-template-columns: 1fr;
     justify-items: flex-end;

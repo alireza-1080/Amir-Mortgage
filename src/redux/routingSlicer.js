@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    route: "home"
+    route: "Home"
 }
 
 const routingSlice = createSlice({

@@ -4,10 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { setSelectedTab } from "../../../../../../redux/navigationSlicer";
 import { updateRoute } from "../../../../../../redux/routingSlicer"; 
 
-function HeaderDesktopNavigationButton({ title, url }) {
+function HeaderDesktopNavigationButton({ title }) {
 
   const dispatch = useDispatch();
-  const selectedTab = useSelector(state => state.navigation.selectedTab);
+  const route = useSelector(state => state.routing.route);
   const button = useRef(null)
 
   const clickHandler = (param) => {
@@ -16,12 +16,12 @@ function HeaderDesktopNavigationButton({ title, url }) {
   }
 
   useEffect(() => {
-    if (selectedTab === title){
+    if (route === title){
       button.current.classList.add("header-desktop-navigation-button--selected");
     } else {
       button.current.classList.remove("header-desktop-navigation-button--selected");
     }
-  }, [selectedTab])
+  }, [route])
 
   return (
     <div className="header-desktop-navigation-button" ref={button} onClick={() => clickHandler(title)}>{title}</div>
