@@ -10,11 +10,13 @@
 @media (max-width: 700px) {
     .title-question {
         font-size: 3.5rem;
+        padding: 5rem 0rem;
     }
 }
 
 @media (max-width: 600px) {
     .title-question {
         font-size: 3rem;
+        padding: 3rem 0rem;
     }
 }

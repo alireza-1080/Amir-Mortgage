@@ -47,6 +47,10 @@
 @media (max-width: 750px) {
     .selection-card {
         width: 80%;
+        height: fit-content;
+        padding: 1rem 0;
         justify-self: center;
+
+        gap: 1rem;
     }
 }
