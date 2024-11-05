@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     length: null,
     step: 1,
+    percentage: 0,
 }
 
 const progressBarSlice = createSlice({
@@ -14,6 +15,7 @@ const progressBarSlice = createSlice({
         },
         updateStep: (state, action) => {
             state.step = action.payload
+            state.percentage = (state.step / state.length) * 100
         }
     }
 })
