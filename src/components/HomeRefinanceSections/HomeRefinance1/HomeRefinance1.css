@@ -1,0 +1,18 @@
+.home-refinance-1__cards-container {
+    width: 100%;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 750px) {
+    .home-refinance-1__cards-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+}

@@ -7,8 +7,7 @@
     background-position-x: center;
     background-position-y: bottom;
 
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
 }
 
 @media (max-width: 850px) {
