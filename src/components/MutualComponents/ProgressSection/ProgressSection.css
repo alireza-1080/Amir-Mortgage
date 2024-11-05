@@ -48,9 +48,9 @@
 }
 
 .progress-section__progress-bar {
-    width: 3rem;
     height: 1.8rem;
     background-color: var(--primary-green);
+    transition: all 200ms linear;
 }
 
 @media (max-width: 950px) {

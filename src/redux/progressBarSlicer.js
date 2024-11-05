@@ -18,5 +18,5 @@ const progressBarSlice = createSlice({
     }
 })
 
-export const { updateLength, ProgressSection } = progressBarSlice.actions;
+export const { updateLength, updateStep } = progressBarSlice.actions;
 export default progressBarSlice.reducer;
