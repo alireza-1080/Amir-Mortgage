@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     length: null,
-    step: 0,
+    step: 1,
 }
 
 const progressBarSlice = createSlice({
