@@ -1,6 +1,7 @@
 .home-refinance-1__cards-container {
     width: 100%;
     height: fit-content;
+    padding-bottom: 5rem;
 
     display: grid;
     grid-template-columns: repeat(3, auto);
