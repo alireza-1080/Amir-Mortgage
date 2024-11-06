@@ -16,9 +16,12 @@ const progressBarSlice = createSlice({
         updateStep: (state, action) => {
             state.step = action.payload
             state.percentage = (state.step / state.length) * 100
+        },
+        resetProgressBar: (state) => {
+            state = initialState;
         }
     }
 })
 
-export const { updateLength, updateStep } = progressBarSlice.actions;
+export const { updateLength, updateStep, resetProgressBar } = progressBarSlice.actions;
 export default progressBarSlice.reducer;

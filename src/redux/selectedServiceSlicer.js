@@ -10,7 +10,7 @@ const selectedService = createSlice({
     reducers: {
         setSelectedService: (state, action) => {
             state.selectedService = action.payload;
-        }
+        },
     }
 })
 

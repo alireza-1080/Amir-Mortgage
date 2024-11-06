@@ -58,10 +58,13 @@ const formStatesSlice = createSlice({
         },
         UpdateSubmitCounter: (state) => {
             state.submitCounter += 1;
+        },
+        resetFormStates: (state) => {
+            state = initialState
         }
     }
 })
 
-export const { updateFirstName, updateIsFirstNameValid, updateLastName, updateIsLastNameValid, updateEmail, updateIsEmailValid, updatePhone, updateIsPhoneValid, updateReason, updateIsReasonValid, updateComments, updateIsCommentsValid, UpdateSubmitCounter } = formStatesSlice.actions;
+export const { updateFirstName, updateIsFirstNameValid, updateLastName, updateIsLastNameValid, updateEmail, updateIsEmailValid, updatePhone, updateIsPhoneValid, updateReason, updateIsReasonValid, updateComments, updateIsCommentsValid, UpdateSubmitCounter, resetFormStates } = formStatesSlice.actions;
 
 export default formStatesSlice.reducer;
