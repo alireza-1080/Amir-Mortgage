@@ -5,6 +5,7 @@ import FooterPicture from '../components/FooterPicture/FooterPicture'
 import ProgressSection from '../components/MutualComponents/ProgressSection/ProgressSection'
 import HomeRefinance1 from '../components/HomeRefinanceSections/HomeRefinance1/HomeRefinance1'
 import HomeRefinance2 from '../components/HomeRefinanceSections/HomeRefinance2/HomeRefinance2'
+import HomeRefinance3 from '../components/HomeRefinanceSections/HomeRefinance3/HomeRefinance3'
 import { useDispatch, useSelector } from "react-redux";
 import { updateStep, updateLength } from "../redux/progressBarSlicer"
 import { updateRoute } from "../redux/routingSlicer"
@@ -32,6 +33,7 @@ function HomeRefinancePage() {
       <ProgressSection />
       {step === 1 && <HomeRefinance1 />}
       {step === 2 && <HomeRefinance2 />}
+      {step === 3 && <HomeRefinance3 />}
       <FooterPicture />
     </div>
   )

@@ -1,0 +1,117 @@
+.range-slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* amount */
+
+.range-slider__amount {
+    font-size: 3.2rem;
+    letter-spacing: 0.3rem;
+    color: var(--primary-green);
+    font-family: var(--robotoRegular);
+}
+
+/* input */
+
+.range-slider__input-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.range-slider__input {
+    appearance: none;
+    width: 64rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+}
+
+.range-slider__input::-webkit-slider-thumb {
+    appearance: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--primary-green);
+    outline: 0 solid rgba(48, 184, 93, 0.20);
+    transition: all 200ms linear;
+}
+
+.range-slider__input:hover::-webkit-slider-thumb {
+    outline: 1rem solid rgba(48, 184, 93, 0.35);
+}
+
+.range-slider:focus::-webkit-slider-thumb {
+    outline: 1rem solid rgba(48, 184, 93, 0.35);
+}
+
+.range-slider__input:active::-webkit-slider-thumb {
+    background-color: var(--primary-blue);
+    outline-color: rgba(48, 112, 184, 0.35);
+}
+
+
+/* submit btn */
+
+.range-slider__submit-btn-container {
+    width: 36rem;
+    height: 6.5rem;
+    background-color: var(--primary-green);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: all 200ms linear;
+    outline-color: rgba(48, 112, 184, 0.2);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.range-slider__submit-btn-container:hover {
+    background-color: var(--primary-blue);
+}
+
+.range-slider__submit-btn-container:active {
+    outline: 1rem solid rgba(48, 112, 184, 0.2);
+}
+
+.range-slider__submit-btn {
+    background-color: unset;
+    color: #fff;
+    font-family: var(--robotoRegular);
+    font-size: 2.6rem;
+}
+
+@media (max-width: 700px) {
+
+    .range-slider__amount {
+        font-size: 2.3rem;
+    }
+
+    .range-slider__input {
+        width: 90%;
+        height: 1.3rem;
+    }
+
+    .range-slider__submit-btn-container {
+        width: 50%;
+        height: 5.5rem;
+        margin-top: 1rem;
+    }
+
+    .range-slider__submit-btn {
+        font-size: 2.3rem;
+    }
+}
