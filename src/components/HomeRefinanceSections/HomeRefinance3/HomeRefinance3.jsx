@@ -19,7 +19,7 @@ function HomeRefinance3() {
   return (
     <div className="home-refinance-3">
         <TitleQuestion title={question}/>
-        <RangeSlider sliderData={sliderData} amountHandler={amountHandler}/>
+        <RangeSlider sliderData={sliderData} amountHandler={amountHandler} question={question}/>
     </div>
   )
 }

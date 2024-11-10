@@ -9,6 +9,8 @@ import HomeRefinance3 from '../components/HomeRefinanceSections/HomeRefinance3/H
 import { useDispatch, useSelector } from "react-redux";
 import { updateStep, updateLength } from "../redux/progressBarSlicer"
 import { updateRoute } from "../redux/routingSlicer"
+import { add_userApplicationData } from "../redux/userApplicationDataSlicer"
+import HomeRefinance4 from "../components/HomeRefinanceSections/HomeRefinance4/HomeRefinance4"
 
 function HomeRefinancePage() {
 
@@ -18,6 +20,7 @@ function HomeRefinancePage() {
   useEffect(() => {
     dispatch(updateLength(10))
     dispatch(updateStep(1))
+    dispatch(add_userApplicationData({ 0: {type: "Home Refinance"}}))
   }, [])
 
   useEffect(() => {
@@ -34,6 +37,7 @@ function HomeRefinancePage() {
       {step === 1 && <HomeRefinance1 />}
       {step === 2 && <HomeRefinance2 />}
       {step === 3 && <HomeRefinance3 />}
+      {step === 4 && <HomeRefinance4 />}
       <FooterPicture />
     </div>
   )
