@@ -6,11 +6,12 @@ import ProgressSection from '../components/MutualComponents/ProgressSection/Prog
 import HomeRefinance1 from '../components/HomeRefinanceSections/HomeRefinance1/HomeRefinance1'
 import HomeRefinance2 from '../components/HomeRefinanceSections/HomeRefinance2/HomeRefinance2'
 import HomeRefinance3 from '../components/HomeRefinanceSections/HomeRefinance3/HomeRefinance3'
+import HomeRefinance4 from "../components/HomeRefinanceSections/HomeRefinance4/HomeRefinance4"
+import HomeRefinance5 from "../components/HomeRefinanceSections/HomeRefinance5/HomeRefinance5"
 import { useDispatch, useSelector } from "react-redux";
 import { updateStep, updateLength } from "../redux/progressBarSlicer"
 import { updateRoute } from "../redux/routingSlicer"
 import { add_userApplicationData } from "../redux/userApplicationDataSlicer"
-import HomeRefinance4 from "../components/HomeRefinanceSections/HomeRefinance4/HomeRefinance4"
 
 function HomeRefinancePage() {
 
@@ -20,7 +21,7 @@ function HomeRefinancePage() {
   useEffect(() => {
     dispatch(updateLength(10))
     dispatch(updateStep(1))
-    dispatch(add_userApplicationData({ 0: {type: "Home Refinance"}}))
+    dispatch(add_userApplicationData({ r0: {type: "Home Refinance"}}))
   }, [])
 
   useEffect(() => {
@@ -38,6 +39,7 @@ function HomeRefinancePage() {
       {step === 2 && <HomeRefinance2 />}
       {step === 3 && <HomeRefinance3 />}
       {step === 4 && <HomeRefinance4 />}
+      {step === 5 && <HomeRefinance5 />}
       <FooterPicture />
     </div>
   )

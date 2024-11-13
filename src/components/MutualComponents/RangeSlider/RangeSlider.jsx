@@ -16,16 +16,20 @@ function RangeSlider({ sliderData, amountHandler, question }) {
     }
 
     const clickHandler = () => {
-        dispatch(add_userApplicationData({[step]: {question, respond: sliderData[sliderValue]}}))
+        dispatch(add_userApplicationData({[`r${step}`]: {question, respond: sliderData[sliderValue]}}))
         dispatch(updateStep(step + 1))
     }
 
     useEffect(() => {
-        setPercentage((sliderValue / sliderData.length) * 100)
+        if (sliderData.length) {
+            setPercentage((sliderValue / (sliderData.length - 1)) * 100)
+        }
     }, [sliderValue])
 
     useEffect(() => {
-        setSliderValue(Math.ceil(sliderData.length / 2))
+        if (sliderData.length) {
+            setSliderValue(Math.ceil(sliderData.length / 2) - 1)
+        }
     }, [])
 
     return (
