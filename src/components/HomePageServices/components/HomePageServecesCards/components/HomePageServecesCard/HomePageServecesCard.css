@@ -32,28 +32,6 @@
 }
 
 @media (max-width: 620px) {
-    /* .home-page-services-card {
-        width: 30rem;
-        height: 12rem;
-        justify-self: var(--card-position);
-
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        padding: 0.4rem 2rem;
-        gap: 2rem;
-    }
-
-    .home-page-services-card__img {
-        width: unset;
-        max-height: 100%;
-        justify-self: flex-end;
-    }
-
-    .home-page-services-card__title {
-        justify-self: flex-start;
-        align-self: center !important;
-    } */
 
     .home-page-services-card {
         width: 70%;
