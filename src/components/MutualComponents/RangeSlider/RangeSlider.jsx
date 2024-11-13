@@ -1,6 +1,6 @@
-import { useDispatch, useSelector } from "react-redux";
 import "./RangeSlider.css"
 import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from "react-redux";
 import { add_userApplicationData } from "../../../redux/userApplicationDataSlicer";
 import { updateStep } from "../../../redux/progressBarSlicer";
 

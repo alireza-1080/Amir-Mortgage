@@ -29,20 +29,24 @@
 }
 
 .range-slider__input {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 64rem;
     height: 1.3rem;
     border-radius: 1rem;
 }
 
 .range-slider__input::-webkit-slider-thumb {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     cursor: pointer;
     background-color: var(--primary-green);
     outline: 0 solid rgba(48, 184, 93, 0.20);
+    -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
