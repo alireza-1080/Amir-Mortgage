@@ -46,7 +46,7 @@
     }
 
     .home-page-services-card__img {
-        width: unset;
+        /* width: unset; */
         height: 100%;
     }
 
