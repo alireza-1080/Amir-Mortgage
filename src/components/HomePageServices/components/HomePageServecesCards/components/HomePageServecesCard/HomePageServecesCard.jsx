@@ -8,13 +8,13 @@ function HomePageServecesCard({ title, icon, index }) {
   const card = useRef(null);
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    if (index % 2) {
-      card.current.style.setProperty("--card-position", "flex-start")
-    } else {
-      card.current.style.setProperty("--card-position", "flex-end")
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (index % 2) {
+  //     card.current.style.setProperty("--card-position", "flex-start")
+  //   } else {
+  //     card.current.style.setProperty("--card-position", "flex-end")
+  //   }
+  // }, [])
 
   const clickHandler = () => {
     dispatch(updateRoute(title))

@@ -31,7 +31,6 @@
     .home-page-services-cards {
         grid-template-columns: 1fr;
         transform: scale(1);
-        max-width: 80%;
     }
 }
 
