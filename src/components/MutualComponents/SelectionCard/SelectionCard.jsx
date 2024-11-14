@@ -10,7 +10,7 @@ function SelectionCard({ question, title, logo, icon }) {
   const step = useSelector(state => state.progressBar.step)
 
   const clickHandler = () => {
-    dispatch(add_userApplicationData({ [`r${step}`]: { respond: title, question, logo } }))
+    dispatch(add_userApplicationData({ [`r${step}`]: { respond: title, question } }))
     dispatch(updateStep(step + 1))
   }
 

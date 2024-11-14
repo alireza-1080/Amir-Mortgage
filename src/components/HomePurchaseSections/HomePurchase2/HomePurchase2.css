@@ -1,0 +1,26 @@
+.home-purchase-2__cards-container {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 950px) {
+    .home-purchase-2__cards-container {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+@media (max-width: 750px) {
+    .home-purchase-2__cards-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}

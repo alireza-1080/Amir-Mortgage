@@ -15,7 +15,7 @@ function HomeRefinance2() {
     const [question] = useState("Property Type:")
 
   return (
-    <div className="home-refinance-2">
+    <div className="home-refinance-2 container">
         <TitleQuestion title={question}/>
         <div className="home-refinance-2__cards-container">
             {homeRefinance2.map((item) => {

@@ -1,0 +1,7 @@
+.home-purchase-page {
+    min-height: calc(100vh - 8rem);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto) 1fr;
+}
