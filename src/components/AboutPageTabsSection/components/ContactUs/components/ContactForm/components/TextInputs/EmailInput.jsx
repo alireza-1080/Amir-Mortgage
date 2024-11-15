@@ -29,7 +29,7 @@ function EmailInput() {
     }
 
     useEffect(() => {
-        dispatch(updateIsEmailValid(validationPattern.test(email)))
+        dispatch(updateIsEmailValid(validationPattern.test(email.trim())))
     }, [email])
 
     useEffect(() => {

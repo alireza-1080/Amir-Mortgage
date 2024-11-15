@@ -29,7 +29,7 @@ function InputsElement({ title, validationPattern, submitCounter, value, setValu
   }, [submitCounter])
 
   useEffect(() => {
-    setIsValueValid(validationPattern.test(value))
+    setIsValueValid(validationPattern.test(value.trim()))
   }, [value])
 
   return (

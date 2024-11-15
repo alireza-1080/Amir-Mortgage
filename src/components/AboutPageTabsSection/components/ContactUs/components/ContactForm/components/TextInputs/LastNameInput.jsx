@@ -29,7 +29,7 @@ function LastNameInput() {
     }
 
     useEffect(() => {
-        dispatch(updateIsLastNameValid(validationPattern.test(lastName)))
+        dispatch(updateIsLastNameValid(validationPattern.test(lastName.trim())))
     }, [lastName])
 
     useEffect(() => {

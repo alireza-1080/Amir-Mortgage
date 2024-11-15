@@ -29,7 +29,7 @@ function PhoneInput() {
     }
 
     useEffect(() => {
-        dispatch(updateIsPhoneValid(validationPattern.test(phone)))
+        dispatch(updateIsPhoneValid(validationPattern.test(phone.trim())))
     }, [phone])
 
     useEffect(() => {
