@@ -1,0 +1,21 @@
+.notice-text {
+    text-align: center;
+    cursor: context-menu;
+    margin-top: -4.5rem;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: var(--primary-green);
+}
+
+@media (max-width: 700px) {
+    .notice-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .notice-text {
+        margin-top: -2.5rem;
+        font-size: 1.6rem;
+    }
+}

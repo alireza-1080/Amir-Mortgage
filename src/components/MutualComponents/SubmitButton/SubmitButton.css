@@ -1,0 +1,44 @@
+.submit-button {
+    width: 36rem;
+    height: 6.5rem;
+    background-color: var(--primary-green);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: all 200ms linear;
+    outline-color: rgba(48, 112, 184, 0.2);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-blue);
+}
+
+.submit-button:active {
+    outline: 1rem solid rgba(48, 112, 184, 0.2);
+}
+
+.submit-button__btn {
+    background-color: unset;
+    color: #fff;
+    font-family: var(--robotoRegular);
+    font-size: 2.6rem;
+}
+
+@media (max-width: 700px) {
+
+    .submit-button {
+        width: 50%;
+        height: 5.5rem;
+        margin-top: 1rem;
+    }
+
+    .submit-button__btn {
+        font-size: 2.3rem;
+    }
+}

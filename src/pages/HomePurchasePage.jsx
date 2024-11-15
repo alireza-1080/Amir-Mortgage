@@ -15,6 +15,10 @@ import HomePurchase5 from "../components/HomePurchaseSections/HomePurchase5/Home
 import HomePurchase6 from "../components/HomePurchaseSections/HomePurchase6/HomePurchase6"
 import HomePurchase7 from "../components/HomePurchaseSections/HomePurchase7/HomePurchase7"
 import HomePurchase8 from "../components/HomePurchaseSections/HomePurchase8/HomePurchase8"
+import HomePurchase9 from "../components/HomePurchaseSections/HomePurchase9/HomePurchase9"
+import HomePurchase10 from "../components/HomePurchaseSections/HomePurchase10/HomePurchase10"
+import HomePurchase11 from "../components/HomePurchaseSections/HomePurchase11/HomePurchase11"
+import HomePurchase12 from "../components/HomePurchaseSections/HomePurchase12/HomePurchase12"
 
 function HomePurchasePage() {
 
@@ -22,7 +26,7 @@ function HomePurchasePage() {
   const step = useSelector(state => state.progressBar.step)
 
   useEffect(() => {
-    dispatch(updateLength(10))
+    dispatch(updateLength(12))
     dispatch(updateStep(1))
     dispatch(add_userApplicationData({ r0: {type: "Home Purchase"}}))
   }, [])
@@ -46,6 +50,10 @@ function HomePurchasePage() {
         {step === 6 && <HomePurchase6 />}
         {step === 7 && <HomePurchase7 />}
         {step === 8 && <HomePurchase8 />}
+        {step === 9 && <HomePurchase9 />}
+        {step === 10 && <HomePurchase10 />}
+        {step === 11 && <HomePurchase11 />}
+        {step === 12 && <HomePurchase12 />}
         <FooterPicture />
     </div>
   )

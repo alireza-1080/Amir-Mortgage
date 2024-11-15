@@ -15,7 +15,7 @@ function HomePurchase7() {
     const [question] = useState("Estimate Your Credit Rating:")
 
     return (
-        <div className="home-purchase-7">
+        <div className="home-purchase-7 container">
             <TitleQuestion title={question} />
             <div className="home-purchase-7__cards-container">
                 {homePurchase7.map(item => {

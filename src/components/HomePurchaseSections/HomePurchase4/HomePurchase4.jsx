@@ -24,7 +24,7 @@ function HomePurchase4() {
     }
 
     return (
-        <div className="home-purchase-4">
+        <div className="home-purchase-4 container">
             <TitleQuestion title={question} />
             <RangeSlider sliderData={sliderData} amountHandler={amountHandler} question={question} />
         </div>
